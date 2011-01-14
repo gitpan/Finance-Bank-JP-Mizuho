@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 NAME
 
 Finance::Bank::JP::Mizuho
@@ -57,7 +59,7 @@ use Finance::OFX::Parse::Simple;
 use HTTP::Cookies;
 use LWP::UserAgent;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use constant USER_AGENT => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)';
 use constant START_URL  => 'http://www.mizuhobank.co.jp/direct/start.html';
@@ -75,17 +77,17 @@ C<%config> keys:
 
 =over 3
 
-=item *
+=item
 B<consumer_id>
 
 Consumer id of Mizuho Direct ( お客さま番号 )
 
-=item *
+=item
 B<password>
 
 Password for your consumer_id
 
-=item *
+=item
 B<questions>
 
 Hash reference paired with: Key as Question, Value as Answer
@@ -142,11 +144,11 @@ C<$term> :
 
 =over 3
 
-=item * L</CONTINUATION_FROM_LAST>
+=item L</CONTINUATION_FROM_LAST>
 
-=item * L</SAME_AS_LAST>
+=item L</SAME_AS_LAST>
 
-=item * L</LAST_TWO_MONTHS>
+=item L</LAST_TWO_MONTHS>
 
 =back
 

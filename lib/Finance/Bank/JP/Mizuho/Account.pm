@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 NAME
 
 Finance::Bank::JP::Mizuho::Account
@@ -16,8 +18,9 @@ Account information of L<Finance::Bank::JP::Mizuho>
 package Finance::Bank::JP::Mizuho::Account;
 
 use strict;
+use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head2 new ( %args )
 

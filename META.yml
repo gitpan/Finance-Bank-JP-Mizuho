@@ -15,7 +15,6 @@ license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-module_name: Finance::Bank::JP::Mizuho
 name: Finance-Bank-JP-Mizuho
 no_index:
   directory:
@@ -31,4 +30,5 @@ requires:
   LWP::UserAgent: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+  repository: http://github.com/ngs/p5-finance-bank-jp-mizuho
+version: 0.02
